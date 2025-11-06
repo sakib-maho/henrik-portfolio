@@ -267,50 +267,52 @@ body {
 .hero-stats {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: stretch;
     width: 100%;
 }
 
 .stat {
     text-align: center;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.25rem;
     background: var(--white);
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
-    width: 100%;
+    width: 85%;
+    max-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--gray-200);
+    align-self: flex-end;
 }
 
 .stat:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
     border-color: var(--accent);
 }
 
 .stat-value {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--accent);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     font-family: 'Cormorant Garamond', serif;
     line-height: 1;
     display: block;
 }
 
 .stat-label {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: var(--text-light);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     display: block;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 /* ===== Section Styles ===== */
